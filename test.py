@@ -1,11 +1,9 @@
 from tkinter import *
 import webbrowser
-import pygame
 
 def open_over44_channel():
     webbrowser.open_new("https://www.youtube.com/channel/UCfA_pq-YZo8yWDAm6MrkzqQ")
 
-# Ajout d'une musqiue
 
 # Création d'un première fenètre
 window = Tk()
