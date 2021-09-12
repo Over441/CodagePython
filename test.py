@@ -1,12 +1,14 @@
+from tkinter import *
 
-# Test
+# Création d'un première fenètre
+window = Tk()
 
-nom = input("Quelle est votre prénom ?")
-age = int(input("Votre age ?"))
-age_requis = 13
+# Personalisation de la fennètre
+window.title("Mon app")
+window.geometry("1080x720")
+window.minsize(480, 360)
+window.iconbitmap("zevent fond.ico")
+window.config(background='#41B77F')
 
-
-if age < 13:
-    print("Bonjour " + nom + " je suis désoler mais vous ne pouvez pas entrer car vous avez " + str(age) + " ans et il faut au moins " + str(age_requis) + " ans pour entrer.")
-else:
-    print("Bonjour " + nom + " vous pouvez entrer car vous avez plus de " + str(age_requis) + " ans !")
+# afficher la fenettre
+window.mainloop()
